@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdb-vU-8KI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock In View Controller-->
+        <scene sceneID="IGM-Rn-ast">
+            <objects>
+                <viewController storyboardIdentifier="Teste" id="gdb-vU-8KI" customClass="ClockInViewController" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lqb-M1-wNk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Welcome, Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rG7-Fi-Lpv">
+                                <rect key="frame" x="118.5" y="390.5" width="177.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpL-mc-AFA">
+                                <rect key="frame" x="156.5" y="454.5" width="101" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CLOCK IN?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFB-sI-rK5">
+                                <rect key="frame" x="160.5" y="556.5" width="93" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="Profile_Test" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-Fz-u2m">
+                                <rect key="frame" x="93" y="132.5" width="228" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5ML-Fz-u2m" secondAttribute="height" multiplier="1:1" id="4g4-cX-Ipm"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-L0-Mli">
+                                <rect key="frame" x="59" y="593" width="296" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knv-57-1eI">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="WjR-9a-u3o"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="fTK-uv-dhL"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.27058823529411763" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="NegativeButton">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-D7-7xV">
+                                        <rect key="frame" x="168" y="0.0" width="128" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="EfE-A1-7yB"/>
+                                            <constraint firstAttribute="height" constant="56" id="Nel-ZD-Mxo"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.27058823529999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="PositiveButton">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5ML-Fz-u2m" firstAttribute="width" secondItem="Lqb-M1-wNk" secondAttribute="width" multiplier="0.55" id="91b-th-u4X"/>
+                            <constraint firstItem="mpL-mc-AFA" firstAttribute="top" secondItem="rG7-Fi-Lpv" secondAttribute="bottom" constant="35" id="GQy-Uy-uD1"/>
+                            <constraint firstItem="rG7-Fi-Lpv" firstAttribute="centerX" secondItem="Lqb-M1-wNk" secondAttribute="centerX" id="QHb-rX-p3k"/>
+                            <constraint firstItem="5ML-Fz-u2m" firstAttribute="centerY" secondItem="Lqb-M1-wNk" secondAttribute="centerY" multiplier="0.55" id="SKM-Lh-BKF"/>
+                            <constraint firstItem="Q4I-L0-Mli" firstAttribute="top" secondItem="uFB-sI-rK5" secondAttribute="bottom" constant="15" id="U1x-Sk-PVK"/>
+                            <constraint firstItem="uFB-sI-rK5" firstAttribute="centerX" secondItem="Lqb-M1-wNk" secondAttribute="centerX" id="faV-Ny-5KU"/>
+                            <constraint firstItem="Q4I-L0-Mli" firstAttribute="centerX" secondItem="Lqb-M1-wNk" secondAttribute="centerX" id="fot-uV-ue3"/>
+                            <constraint firstItem="5ML-Fz-u2m" firstAttribute="centerX" secondItem="Lqb-M1-wNk" secondAttribute="centerX" id="lgJ-xG-luq"/>
+                            <constraint firstItem="rG7-Fi-Lpv" firstAttribute="top" secondItem="5ML-Fz-u2m" secondAttribute="bottom" constant="30" id="rTU-9q-xp0"/>
+                            <constraint firstItem="uFB-sI-rK5" firstAttribute="top" relation="lessThanOrEqual" secondItem="mpL-mc-AFA" secondAttribute="bottom" constant="66" id="tLf-re-x72"/>
+                            <constraint firstItem="mpL-mc-AFA" firstAttribute="centerX" secondItem="Lqb-M1-wNk" secondAttribute="centerX" id="yag-Ar-dqL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6QJ-M1-d5f"/>
+                    </view>
+                    <connections>
+                        <outlet property="negativeButton" destination="Knv-57-1eI" id="QXK-C8-vH4"/>
+                        <outlet property="positiveButton" destination="DKE-D7-7xV" id="II4-7v-W68"/>
+                        <outlet property="profilePicture" destination="5ML-Fz-u2m" id="hSQ-ez-8oX"/>
+                        <outlet property="timeLabel" destination="mpL-mc-AFA" id="XC5-nv-Ga2"/>
+                        <outlet property="welcomeLabel" destination="rG7-Fi-Lpv" id="Ucq-HE-Rsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsU-eZ-KED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NegativeButton" width="34" height="34"/>
+        <image name="PositiveButton" width="34" height="34"/>
+        <image name="Profile_Test" width="1000" height="750"/>
+    </resources>
+</document>

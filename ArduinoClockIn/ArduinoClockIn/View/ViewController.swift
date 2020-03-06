@@ -12,9 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var testButton: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.performSegue(withIdentifier: "AuthenticationSucceeded", sender: self)
     }
     @IBAction func testAction(_ sender: UIButton) {
         AuthenticationPresenter(delegate: self).authenticate()
@@ -32,9 +39,12 @@ extension ViewController: AuthenticationProtocol {
     
     func authenticationSuccess() {
         // Move to the main thread because a state update triggers UI changes.
-        DispatchQueue.main.async { [unowned self] in
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
             self.testButton.setTitle("Deu certo!", for: .normal)
             self.testButton.isEnabled = false
+            
+            self.performSegue(withIdentifier: "AuthenticationSucceeded", sender: self)
         }
     }
     
