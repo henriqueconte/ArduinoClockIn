@@ -26,7 +26,7 @@ class Exchange: NSObject {
     private let expectedCharacteristicUUIDString = "DFB1"
     private(set) var isReady: Bool = false
     
-
+    
     init(delegate: ExchangeDelegate? = nil) {
         super.init()
         self.delegate = delegate
@@ -47,6 +47,7 @@ class Exchange: NSObject {
         if( self.isReady ) {
             guard let characterist = self.characterist else { return }
             self.peripheral?.readValue(for: characterist)
+            
         }
     }
 }
@@ -55,17 +56,17 @@ extension Exchange: CBCentralManagerDelegate{
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
-          case .unknown:
+        case .unknown:
             print("central.state is .unknown")
-          case .resetting:
+        case .resetting:
             print("central.state is .resetting")
-          case .unsupported:
+        case .unsupported:
             print("central.state is .unsupported")
-          case .unauthorized:
+        case .unauthorized:
             print("central.state is .unauthorized")
-          case .poweredOff:
+        case .poweredOff:
             print("WARNING - Bluetooth is Disabled. Switch it on and try again")
-          case .poweredOn:
+        case .poweredOn:
             print("Began Scanning...")
             guard let centralManager = centralManager else { return }
             centralManager.scanForPeripherals(withServices: [human_interface_deviceCBUUID])
@@ -116,17 +117,22 @@ extension Exchange : CBPeripheralDelegate{
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else { return }
         for service in services {
-          peripheral.discoverCharacteristics(nil, for: service)
+            peripheral.discoverCharacteristics(nil, for: service)
         }
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         guard let characteristics = service.characteristics else { return }
         for characteristic in characteristics {
-              print(characteristic)
+            if( characteristic.uuid.uuidString == self.expectedCharacteristicUUIDString ) {
+                print("Discovered Characteristic \(characteristic), for Service \(service)")
+                self.characterist = characteristic
+                self.isReady = true
+                peripheral.setNotifyValue(true, for: characteristic)
+            }
         }
     }
-    
+
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         guard let characteristOfInterest = self.characterist, let data = characteristOfInterest.value  else { return }
         if( characteristic.uuid.uuidString == characteristOfInterest.uuid.uuidString ) {
@@ -136,7 +142,7 @@ extension Exchange : CBPeripheralDelegate{
     }
     
     func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
-    
+        
         guard let characteristOfInterest = self.characterist, let data = characteristOfInterest.value else { return }
         if( characteristic.uuid.uuidString == characteristOfInterest.uuid.uuidString ) {
             
