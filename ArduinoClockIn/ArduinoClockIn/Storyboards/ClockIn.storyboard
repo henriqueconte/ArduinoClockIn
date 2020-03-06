@@ -53,6 +53,10 @@
                                         <state key="normal" image="NegativeButton">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="PressedNegativeButton:" destination="gdb-vU-8KI" eventType="touchDown" id="hoa-DA-0hx"/>
+                                            <action selector="ReleaseButtonInside:" destination="gdb-vU-8KI" eventType="touchUpInside" id="3s6-qi-cxf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-D7-7xV">
                                         <rect key="frame" x="168" y="0.0" width="128" height="56"/>
@@ -65,6 +69,10 @@
                                         <state key="normal" image="PositiveButton">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="PressedPositiveButton:" destination="gdb-vU-8KI" eventType="touchDown" id="6Gm-tq-kmJ"/>
+                                            <action selector="ReleaseButtonInside:" destination="gdb-vU-8KI" eventType="touchUpInside" id="UU3-ca-WbR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

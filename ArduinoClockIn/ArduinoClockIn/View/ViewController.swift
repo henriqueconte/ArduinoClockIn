@@ -10,22 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var testButton: UIButton!
-    
+    @IBOutlet weak var OpenDoorButton: UIButton!
+    @IBOutlet weak var ClockInButton: UIButton!
+    @IBOutlet weak var RecordsButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor().colorWithGradient(frame: view.frame, colors: [#colorLiteral(red: 0.3529411765, green: 0.7843137255, blue: 0.9803921569, alpha: 1), #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)], startPoint: CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint(x: 0.5, y: 1.0))
+        OpenDoorButton.layer.cornerRadius = 10
+        ClockInButton.layer.cornerRadius = 10
+        RecordsButton.layer.cornerRadius = 10
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.performSegue(withIdentifier: "AuthenticationSucceeded", sender: self)
-    }
-    @IBAction func testAction(_ sender: UIButton) {
+    @IBAction func OperDoorButtonPressed(_ sender: UIButton) {
         AuthenticationPresenter(delegate: self).authenticate()
     }
+    
+    @IBAction func ClockInButtonPressed(_ sender: UIButton) {
+        AuthenticationPresenter(delegate: self).authenticate()
+    }
+    
+    @IBAction func RecordsButtonPressed(_ sender: UIButton) {
+    }
+    
+    
     
 
 }
@@ -41,9 +51,6 @@ extension ViewController: AuthenticationProtocol {
         // Move to the main thread because a state update triggers UI changes.
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.testButton.setTitle("Deu certo!", for: .normal)
-            self.testButton.isEnabled = false
-            
             self.performSegue(withIdentifier: "AuthenticationSucceeded", sender: self)
         }
     }

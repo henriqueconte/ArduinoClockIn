@@ -15,30 +15,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeC-ww-D5L">
-                                <rect key="frame" x="112.5" y="405.5" width="189" height="85"/>
-                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="46u-Lg-CVm"/>
-                                    <constraint firstAttribute="height" constant="85" id="kNI-ve-1qs"/>
-                                </constraints>
-                                <state key="normal" title="Teste autentication">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIe-bX-XL8"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="AcademyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PBQ-eP-cWi">
+                                <rect key="frame" x="140.5" y="145" width="133" height="157"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="pSJ-eJ-5ZD">
+                                <rect key="frame" x="16" y="408" width="382" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN9-P9-8jI">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="Axu-vV-Zxd"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="ni8-oP-Pln"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Open Door">
+                                            <color key="titleColor" red="0.0" green="0.15686274509803921" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="OperDoorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLa-cZ-wDN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIQ-mU-Xhe">
+                                        <rect key="frame" x="0.0" y="59" width="382" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="HBW-Lm-W6S"/>
+                                            <constraint firstAttribute="height" constant="46" id="abQ-0G-HMt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Clock In">
+                                            <color key="titleColor" red="0.0" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClockInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gv-aU-2ki"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G55-Xx-iTj">
+                                        <rect key="frame" x="0.0" y="118" width="382" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="ZSL-e1-hxd"/>
+                                            <constraint firstAttribute="height" constant="46" id="oJr-Mh-ITL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Records">
+                                            <color key="titleColor" red="0.0" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RecordsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8f-kZ-BBd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FeC-ww-D5L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Oc-VS-8SY"/>
-                            <constraint firstItem="FeC-ww-D5L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PDh-JV-ox0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pSJ-eJ-5ZD" secondAttribute="trailing" constant="16" id="ETt-gn-RvL"/>
+                            <constraint firstItem="PBQ-eP-cWi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="GGZ-ca-8bq"/>
+                            <constraint firstItem="pSJ-eJ-5ZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vgu-Re-URN"/>
+                            <constraint firstItem="pSJ-eJ-5ZD" firstAttribute="top" secondItem="PBQ-eP-cWi" secondAttribute="bottom" constant="106" id="bRk-bI-9zX"/>
+                            <constraint firstItem="PBQ-eP-cWi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="19:128" id="mP8-Zc-Yhw"/>
+                            <constraint firstItem="PBQ-eP-cWi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJX-1n-5nl"/>
+                            <constraint firstItem="pSJ-eJ-5ZD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xof-uI-kcr"/>
+                            <constraint firstItem="PBQ-eP-cWi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.321256" id="ziS-B7-Flh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="testButton" destination="FeC-ww-D5L" id="ahX-2V-nX7"/>
+                        <outlet property="ClockInButton" destination="oIQ-mU-Xhe" id="SFw-h4-9mH"/>
+                        <outlet property="OpenDoorButton" destination="DN9-P9-8jI" id="9Bp-xP-cWC"/>
+                        <outlet property="RecordsButton" destination="G55-Xx-iTj" id="9Gt-Qd-Oa9"/>
                         <segue destination="fDc-ua-egP" kind="show" identifier="AuthenticationSucceeded" id="q8s-8X-9z4"/>
                     </connections>
                 </viewController>
@@ -57,4 +104,7 @@
             <point key="canvasLocation" x="767" y="127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AcademyLogo" width="133" height="157"/>
+    </resources>
 </document>
