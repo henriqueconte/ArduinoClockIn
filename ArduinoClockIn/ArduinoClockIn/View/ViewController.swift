@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    //Buttuons
     @IBOutlet weak var testButton: UIButton!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
     @IBAction func testAction(_ sender: UIButton) {
         AuthenticationPresenter(delegate: self).authenticate()
