@@ -47,13 +47,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0498DD9524116F5D001F401E /* Storyboards */ = {
+		045321AA2416BC730054723D /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				045321AE2416BCFB0054723D /* Presenter */,
+				045321AD2416BCF30054723D /* View */,
+				2DB4ADA8241022EE0016C64C /* Protocol */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		045321AB2416BCA10054723D /* ClockInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				045321AC2416BCE90054723D /* View */,
+			);
+			path = ClockInScreen;
+			sourceTree = "<group>";
+		};
+		045321AC2416BCE90054723D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047899F02411500B00DA0EB2 /* ClockIn.storyboard */,
+				047899F22411515300DA0EB2 /* ClockInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045321AD2416BCF30054723D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				808AEBEC240EF66B00DC90DB /* Main.storyboard */,
-				047899F02411500B00DA0EB2 /* ClockIn.storyboard */,
+				808AEBEA240EF66B00DC90DB /* ViewController.swift */,
 			);
-			path = Storyboards;
+			path = View;
+			sourceTree = "<group>";
+		};
+		045321AE2416BCFB0054723D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		0498DD96241172EA001F401E /* Extensions */ = {
@@ -67,18 +102,8 @@
 		2DB4ADA6241022690016C64C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		2DB4ADA72410227D0016C64C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				808AEBEA240EF66B00DC90DB /* ViewController.swift */,
-				047899F22411515300DA0EB2 /* ClockInViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		2DB4ADA8241022EE0016C64C /* Protocol */ = {
@@ -108,10 +133,9 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
+				045321AB2416BCA10054723D /* ClockInScreen */,
+				045321AA2416BC730054723D /* InitialScreen */,
 				0498DD96241172EA001F401E /* Extensions */,
-				0498DD9524116F5D001F401E /* Storyboards */,
-				2DB4ADA8241022EE0016C64C /* Protocol */,
-				2DB4ADA72410227D0016C64C /* View */,
 				2DB4ADA6241022690016C64C /* Presenter */,
 				808AEBE6240EF66B00DC90DB /* AppDelegate.swift */,
 				808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */,
