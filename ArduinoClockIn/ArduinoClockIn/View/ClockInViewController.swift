@@ -18,6 +18,10 @@ class ClockInViewController: UIViewController {
     @IBOutlet weak var positiveButton: UIButton!
     
     
+    @IBAction func TouchCancel(_ sender: UIButton) {
+        sender.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+    
     @IBAction func ReleaseButtonInside(_ sender: UIButton) {
         sender.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.dismiss(animated: true, completion: nil)
@@ -50,16 +54,10 @@ class ClockInViewController: UIViewController {
         negativeButton.setImage(UIImage(named: "NegativeButtonWhite"), for: .highlighted)
         negativeButton.setImage(UIImage(named: "NegativeButton"), for: .normal)
         
-//        negativeButton.setBackgroundColor(color: #colorLiteral(red: 1, green: 0.2705882353, blue: 0.2274509804, alpha: 1), forState: .highlighted)
-//        negativeButton.setBackgroundColor(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), forState: .normal)
-//
-        
         positiveButton.layer.cornerRadius = 10
         positiveButton.layer.borderColor = #colorLiteral(red: 0.2039215686, green: 0.7803921569, blue: 0.3490196078, alpha: 1)
         positiveButton.layer.borderWidth = 1
         positiveButton.setImage(UIImage(named: "PositiveButtonWhite"), for: .highlighted)
         positiveButton.setImage(UIImage(named: "PositiveButton"), for: .normal)
-//        positiveButton.setBackgroundColor(color: #colorLiteral(red: 0.2039215686, green: 0.7803921569, blue: 0.3490196078, alpha: 1), forState: .highlighted)
-//        positiveButton.setBackgroundColor(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), forState: .normal)
     }
 }

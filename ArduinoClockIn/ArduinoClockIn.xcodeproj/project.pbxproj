@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044F6E6B2412C00E007EFB64 /* Extension_UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F6E6A2412C00E007EFB64 /* Extension_UIButton.swift */; };
 		047899F12411500B00DA0EB2 /* ClockIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047899F02411500B00DA0EB2 /* ClockIn.storyboard */; };
 		047899F32411515300DA0EB2 /* ClockInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047899F22411515300DA0EB2 /* ClockInViewController.swift */; };
 		0498DD98241172FB001F401E /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498DD97241172FB001F401E /* Extension_UIColor.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		044F6E6A2412C00E007EFB64 /* Extension_UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIButton.swift; sourceTree = "<group>"; };
 		047899F02411500B00DA0EB2 /* ClockIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClockIn.storyboard; sourceTree = "<group>"; };
 		047899F22411515300DA0EB2 /* ClockInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInViewController.swift; sourceTree = "<group>"; };
 		0498DD97241172FB001F401E /* Extension_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				0498DD97241172FB001F401E /* Extension_UIColor.swift */,
-				044F6E6A2412C00E007EFB64 /* Extension_UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,7 +195,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */,
-				044F6E6B2412C00E007EFB64 /* Extension_UIButton.swift in Sources */,
 				2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */,
 				047899F32411515300DA0EB2 /* ClockInViewController.swift in Sources */,
 				808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */,

@@ -53,9 +53,12 @@
                                         <state key="normal" image="NegativeButton">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected" image="NegativeButton"/>
+                                        <state key="highlighted" image="NegativeButton"/>
                                         <connections>
                                             <action selector="PressedNegativeButton:" destination="gdb-vU-8KI" eventType="touchDown" id="hoa-DA-0hx"/>
                                             <action selector="ReleaseButtonInside:" destination="gdb-vU-8KI" eventType="touchUpInside" id="3s6-qi-cxf"/>
+                                            <action selector="TouchCancel:" destination="gdb-vU-8KI" eventType="touchCancel" id="S8e-q5-wr9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-D7-7xV">
@@ -69,9 +72,12 @@
                                         <state key="normal" image="PositiveButton">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected" image="PositiveButton"/>
+                                        <state key="highlighted" image="PositiveButton"/>
                                         <connections>
                                             <action selector="PressedPositiveButton:" destination="gdb-vU-8KI" eventType="touchDown" id="6Gm-tq-kmJ"/>
                                             <action selector="ReleaseButtonInside:" destination="gdb-vU-8KI" eventType="touchUpInside" id="UU3-ca-WbR"/>
+                                            <action selector="TouchCancel:" destination="gdb-vU-8KI" eventType="touchCancel" id="MFx-De-MVO"/>
                                         </connections>
                                     </button>
                                 </subviews>
