@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047899F12411500B00DA0EB2 /* ClockIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047899F02411500B00DA0EB2 /* ClockIn.storyboard */; };
+		047899F32411515300DA0EB2 /* ClockInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047899F22411515300DA0EB2 /* ClockInViewController.swift */; };
+		0498DD98241172FB001F401E /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498DD97241172FB001F401E /* Extension_UIColor.swift */; };
 		2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */; };
 		2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */; };
 		808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE6240EF66B00DC90DB /* AppDelegate.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047899F02411500B00DA0EB2 /* ClockIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClockIn.storyboard; sourceTree = "<group>"; };
+		047899F22411515300DA0EB2 /* ClockInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInViewController.swift; sourceTree = "<group>"; };
+		0498DD97241172FB001F401E /* Extension_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 		2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
 		808AEBE3240EF66B00DC90DB /* ArduinoClockIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArduinoClockIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0498DD9524116F5D001F401E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				808AEBEC240EF66B00DC90DB /* Main.storyboard */,
+				047899F02411500B00DA0EB2 /* ClockIn.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0498DD96241172EA001F401E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0498DD97241172FB001F401E /* Extension_UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2DB4ADA6241022690016C64C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				808AEBEA240EF66B00DC90DB /* ViewController.swift */,
+				047899F22411515300DA0EB2 /* ClockInViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,12 +108,13 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
+				0498DD96241172EA001F401E /* Extensions */,
+				0498DD9524116F5D001F401E /* Storyboards */,
 				2DB4ADA8241022EE0016C64C /* Protocol */,
 				2DB4ADA72410227D0016C64C /* View */,
 				2DB4ADA6241022690016C64C /* Presenter */,
 				808AEBE6240EF66B00DC90DB /* AppDelegate.swift */,
 				808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */,
-				808AEBEC240EF66B00DC90DB /* Main.storyboard */,
 				808AEBEF240EF66F00DC90DB /* Assets.xcassets */,
 				808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */,
 				808AEBF4240EF66F00DC90DB /* Info.plist */,
@@ -155,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047899F12411500B00DA0EB2 /* ClockIn.storyboard in Resources */,
 				808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */,
 				808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */,
 				808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */,
@@ -170,7 +196,9 @@
 			files = (
 				2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */,
 				2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */,
+				047899F32411515300DA0EB2 /* ClockInViewController.swift in Sources */,
 				808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */,
+				0498DD98241172FB001F401E /* Extension_UIColor.swift in Sources */,
 				808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */,
 				808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */,
 			);
@@ -317,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZPZD745C7;
+				DEVELOPMENT_TEAM = M36T693Y9P;
 				INFOPLIST_FILE = ArduinoClockIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZPZD745C7;
+				DEVELOPMENT_TEAM = M36T693Y9P;
 				INFOPLIST_FILE = ArduinoClockIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
