@@ -48,12 +48,12 @@ extension ViewController: ExchangeDelegate{
     
     func communicator(_ communicator: Exchange, didRead data: Data) {
         print(#function)
-        print(String(data: data, encoding: .utf8) ?? "ERROR")
+        print(String(data: data, encoding: .utf8) ?? "ERROR READ ")
     }
     
     func communicator(_ communicator: Exchange, didWrite data: Data) {
         print(#function)
-        print(String(data: data, encoding: .utf8) ?? "ERROR")
+        print(String(data: data, encoding: .utf8) ?? "ERROR WRITE")
     }
     
 }
