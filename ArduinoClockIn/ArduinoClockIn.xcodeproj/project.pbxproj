@@ -13,12 +13,15 @@
 		80471AE7241180F7001DCFA0 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80471AE6241180F7001DCFA0 /* LoginStoryboard.storyboard */; };
 		808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE6240EF66B00DC90DB /* AppDelegate.swift */; };
 		808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */; };
-		808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEC240EF66B00DC90DB /* Main.storyboard */; };
 		808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEF240EF66F00DC90DB /* Assets.xcassets */; };
 		808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */; };
-		80F655822412BB9A00212896 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6557D2412BB9A00212896 /* AuthenticationPresenter.swift */; };
-		80F655832412BB9A00212896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6557F2412BB9A00212896 /* ViewController.swift */; };
-		80F655842412BB9A00212896 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F655812412BB9A00212896 /* AuthenticationProtocol.swift */; };
+		80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */; };
+		80F917452416DBC10063FE37 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */; };
+		80F917462416DBC10063FE37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F917412416DBC10063FE37 /* ViewController.swift */; };
+		80F917472416DBC10063FE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F917422416DBC10063FE37 /* Main.storyboard */; };
+		80F9174C2416DBCE0063FE37 /* ClockInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */; };
+		80F9174D2416DBCE0063FE37 /* ClockIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */; };
+		80F917502416DBEB0063FE37 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +33,16 @@
 		808AEBE3240EF66B00DC90DB /* ArduinoClockIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArduinoClockIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AEBE6240EF66B00DC90DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		808AEBED240EF66B00DC90DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		808AEBEF240EF66F00DC90DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808AEBF2240EF66F00DC90DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808AEBF4240EF66F00DC90DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80F6557D2412BB9A00212896 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
-		80F6557F2412BB9A00212896 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80F655812412BB9A00212896 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		80F917412416DBC10063FE37 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80F917432416DBC10063FE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockInViewController.swift; sourceTree = "<group>"; };
+		80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockIn.storyboard; sourceTree = "<group>"; };
+		80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +118,13 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
-				80F6557C2412BB9A00212896 /* Presenter */,
-				80F655802412BB9A00212896 /* Protocol */,
-				80F6557E2412BB9A00212896 /* View */,
+				80F9174E2416DBEB0063FE37 /* Extensions */,
+				80F917482416DBCE0063FE37 /* ClockInScreen */,
+				80F9173B2416DBC10063FE37 /* InitialScreen */,
 				80471AE9241186F5001DCFA0 /* ArduinoClockIn.entitlements */,
 				80471AD92411772A001DCFA0 /* Login */,
 				808AEBE6240EF66B00DC90DB /* AppDelegate.swift */,
 				808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */,
-				808AEBEC240EF66B00DC90DB /* Main.storyboard */,
 				808AEBEF240EF66F00DC90DB /* Assets.xcassets */,
 				808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */,
 				808AEBF4240EF66F00DC90DB /* Info.plist */,
@@ -127,28 +132,64 @@
 			path = ArduinoClockIn;
 			sourceTree = "<group>";
 		};
-		80F6557C2412BB9A00212896 /* Presenter */ = {
+		80F9173B2416DBC10063FE37 /* InitialScreen */ = {
 			isa = PBXGroup;
 			children = (
-				80F6557D2412BB9A00212896 /* AuthenticationPresenter.swift */,
+				80F9173C2416DBC10063FE37 /* Presenter */,
+				80F9173E2416DBC10063FE37 /* Protocol */,
+				80F917402416DBC10063FE37 /* View */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		80F9173C2416DBC10063FE37 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		80F6557E2412BB9A00212896 /* View */ = {
+		80F9173E2416DBC10063FE37 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				80F6557F2412BB9A00212896 /* ViewController.swift */,
+				80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		80F917402416DBC10063FE37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80F917412416DBC10063FE37 /* ViewController.swift */,
+				80F917422416DBC10063FE37 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		80F655802412BB9A00212896 /* Protocol */ = {
+		80F917482416DBCE0063FE37 /* ClockInScreen */ = {
 			isa = PBXGroup;
 			children = (
-				80F655812412BB9A00212896 /* AuthenticationProtocol.swift */,
+				80F917492416DBCE0063FE37 /* View */,
 			);
-			path = Protocol;
+			path = ClockInScreen;
+			sourceTree = "<group>";
+		};
+		80F917492416DBCE0063FE37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */,
+				80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80F9174E2416DBEB0063FE37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F9174D2416DBCE0063FE37 /* ClockIn.storyboard in Resources */,
 				808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */,
+				80F917472416DBC10063FE37 /* Main.storyboard in Resources */,
 				808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */,
-				808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */,
 				80471AE7241180F7001DCFA0 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,34 +265,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F655832412BB9A00212896 /* ViewController.swift in Sources */,
 				80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */,
-				80F655842412BB9A00212896 /* AuthenticationProtocol.swift in Sources */,
 				80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */,
+				80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */,
+				80F917502416DBEB0063FE37 /* Extension_UIColor.swift in Sources */,
 				80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */,
 				808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */,
+				80F9174C2416DBCE0063FE37 /* ClockInViewController.swift in Sources */,
 				808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */,
-				80F655822412BB9A00212896 /* AuthenticationPresenter.swift in Sources */,
+				80F917462416DBC10063FE37 /* ViewController.swift in Sources */,
+				80F917452416DBC10063FE37 /* AuthenticationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		808AEBEC240EF66B00DC90DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808AEBED240EF66B00DC90DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				808AEBF2240EF66F00DC90DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80F917422416DBC10063FE37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F917432416DBC10063FE37 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
