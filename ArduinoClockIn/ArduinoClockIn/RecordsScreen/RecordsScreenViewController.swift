@@ -33,9 +33,16 @@ extension RecordsScreenViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CLockInCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ClockInCell else {return UITableViewCell()}
         
-        
+        if indexPath.row == 0 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell") as? ProfileCell else { return UITableViewCell() }
+            
+            DispatchQueue.main.async {
+                cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.width/2
+            }
+            return cell
+        }
         return cell
     }
 }

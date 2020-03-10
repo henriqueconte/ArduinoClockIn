@@ -1,20 +1,17 @@
 //
-//  ClockInCell.swift
+//  ProfileCell.swift
 //  ArduinoClockIn
 //
-//  Created by Rafael Ferreira on 09/03/20.
+//  Created by Rafael Ferreira on 10/03/20.
 //  Copyright © 2020 Henrique Figueiredo Conte. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class ClockInCell: UITableViewCell {
-    
-    @IBOutlet weak var ClockInDate: UILabel!
-    @IBOutlet weak var EnteringTime: UILabel!
-    @IBOutlet weak var LeavingTime: UILabel!
-    @IBOutlet weak var totalTimeWorked: UILabel!
+class ProfileCell: UITableViewCell {
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var userName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

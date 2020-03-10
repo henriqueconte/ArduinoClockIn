@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0408BB6124181C3200F06F01 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408BB6024181C3100F06F01 /* ProfileCell.swift */; };
 		045321B12416BF430054723D /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045321B02416BF430054723D /* Records.storyboard */; };
 		045321B32416C1800054723D /* RecordsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045321B22416C1800054723D /* RecordsScreenViewController.swift */; };
 		045321B62416CD100054723D /* Clockin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045321B52416CD100054723D /* Clockin.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0408BB6024181C3100F06F01 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		045321B02416BF430054723D /* Records.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Records.storyboard; sourceTree = "<group>"; };
 		045321B22416C1800054723D /* RecordsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScreenViewController.swift; sourceTree = "<group>"; };
 		045321B52416CD100054723D /* Clockin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockin.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				045321B82416D1700054723D /* ClockInCell.swift */,
+				0408BB6024181C3100F06F01 /* ProfileCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */,
 				2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */,
 				047899F32411515300DA0EB2 /* ClockInViewController.swift in Sources */,
+				0408BB6124181C3200F06F01 /* ProfileCell.swift in Sources */,
 				808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */,
 				0498DD98241172FB001F401E /* Extension_UIColor.swift in Sources */,
 				808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */,
