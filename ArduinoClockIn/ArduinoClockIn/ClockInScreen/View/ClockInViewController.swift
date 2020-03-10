@@ -45,7 +45,14 @@ class ClockInViewController: UIViewController {
                     DispatchQueue.main.async {
                         self.dismiss(animated: true, completion: nil)
                     }
+                } else {
+                    DispatchQueue.main.async {
+                        blackBlur.removeFromSuperview()
                     
+                        let alert = UIAlertController(title: "Some error occurred, try again", message: nil, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 }
             }
         }
