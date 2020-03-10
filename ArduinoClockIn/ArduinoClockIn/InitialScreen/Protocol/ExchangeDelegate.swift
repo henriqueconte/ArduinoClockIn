@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ExchangeDelegate {
-    func communicatorDidConnect(_ communicator: Exchange)
-    func communicator(_ communicator: Exchange, didRead data: Data)
-    func communicator(_ communicator: Exchange, didWrite data: Data)
+    func communicatorDidConnect(_ communicator: ExchangePresenter)
+    func communicator(_ communicator: ExchangePresenter, didRead data: Data)
+    func communicator(_ communicator: ExchangePresenter, didWrite data: Data)
 }

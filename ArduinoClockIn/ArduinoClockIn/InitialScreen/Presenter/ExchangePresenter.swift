@@ -13,7 +13,7 @@ let human_interface_deviceCBUUID = CBUUID(string: "0x1812")
 
 /// This class abstracts communication with the Arduino Bluetooth Module.
 /// It has methods for reading and writing data to Arduino.
-class Exchange: NSObject {
+class ExchangePresenter: NSObject {
     /// Set this to handle callbacks
     var delegate: ExchangeDelegate?
     
@@ -52,7 +52,7 @@ class Exchange: NSObject {
     }
 }
 
-extension Exchange: CBCentralManagerDelegate{
+extension ExchangePresenter: CBCentralManagerDelegate{
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
@@ -111,9 +111,10 @@ extension Exchange: CBCentralManagerDelegate{
             centralManager.scanForPeripherals(withServices: [human_interface_deviceCBUUID])
         }
     }
+
 }
 
-extension Exchange : CBPeripheralDelegate{
+extension ExchangePresenter : CBPeripheralDelegate{
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else { return }
         for service in services {

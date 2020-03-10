@@ -7,33 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */; };
-		2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */; };
-		60BDA322241271840065DEA9 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BDA321241271840065DEA9 /* Exchange.swift */; };
-		60BDA3242412726D0065DEA9 /* ExchangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BDA3232412726D0065DEA9 /* ExchangeDelegate.swift */; };
-		60BDA326241279980065DEA9 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BDA325241279980065DEA9 /* DataConvertible.swift */; };
+		606A064F2417EE0700844462 /* ExchangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A064E2417EE0700844462 /* ExchangePresenter.swift */; };
+		606A06522417EE2700844462 /* ExchangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A06502417EE2700844462 /* ExchangeDelegate.swift */; };
+		606A06532417EE2700844462 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A06512417EE2700844462 /* DataConvertible.swift */; };
+		80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE0241180C4001DCFA0 /* LoginView.swift */; };
+		80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE2241180D4001DCFA0 /* LoginProtocol.swift */; };
+		80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE4241180DC001DCFA0 /* LoginPresenter.swift */; };
+		80471AE7241180F7001DCFA0 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80471AE6241180F7001DCFA0 /* LoginStoryboard.storyboard */; };
 		808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE6240EF66B00DC90DB /* AppDelegate.swift */; };
 		808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */; };
-		808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBEA240EF66B00DC90DB /* ViewController.swift */; };
-		808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEC240EF66B00DC90DB /* Main.storyboard */; };
 		808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEF240EF66F00DC90DB /* Assets.xcassets */; };
 		808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */; };
+		80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */; };
+		80F917452416DBC10063FE37 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */; };
+		80F917462416DBC10063FE37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F917412416DBC10063FE37 /* ViewController.swift */; };
+		80F917472416DBC10063FE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F917422416DBC10063FE37 /* Main.storyboard */; };
+		80F9174C2416DBCE0063FE37 /* ClockInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */; };
+		80F9174D2416DBCE0063FE37 /* ClockIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */; };
+		80F917502416DBEB0063FE37 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
-		2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
-		60BDA321241271840065DEA9 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
-		60BDA3232412726D0065DEA9 /* ExchangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDelegate.swift; sourceTree = "<group>"; };
-		60BDA325241279980065DEA9 /* DataConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
+		606A064E2417EE0700844462 /* ExchangePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangePresenter.swift; sourceTree = "<group>"; };
+		606A06502417EE2700844462 /* ExchangeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangeDelegate.swift; path = ArduinoClockIn/InitialScreen/Protocol/ExchangeDelegate.swift; sourceTree = SOURCE_ROOT; };
+		606A06512417EE2700844462 /* DataConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataConvertible.swift; path = ArduinoClockIn/InitialScreen/Protocol/DataConvertible.swift; sourceTree = SOURCE_ROOT; };
+		80471AE0241180C4001DCFA0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		80471AE2241180D4001DCFA0 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		80471AE4241180DC001DCFA0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		80471AE6241180F7001DCFA0 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		80471AE9241186F5001DCFA0 /* ArduinoClockIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArduinoClockIn.entitlements; sourceTree = "<group>"; };
 		808AEBE3240EF66B00DC90DB /* ArduinoClockIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArduinoClockIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AEBE6240EF66B00DC90DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		808AEBEA240EF66B00DC90DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		808AEBED240EF66B00DC90DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		808AEBEF240EF66F00DC90DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808AEBF2240EF66F00DC90DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808AEBF4240EF66F00DC90DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		80F917412416DBC10063FE37 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80F917432416DBC10063FE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockInViewController.swift; sourceTree = "<group>"; };
+		80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockIn.storyboard; sourceTree = "<group>"; };
+		80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,39 +62,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DB4ADA6241022690016C64C /* Presenter */ = {
+		606A0654241802AB00844462 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				60BDA320241270F60065DEA9 /* bluetooth */,
-				2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		2DB4ADA72410227D0016C64C /* View */ = {
+		606A0655241802C200844462 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				808AEBEA240EF66B00DC90DB /* ViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2DB4ADA8241022EE0016C64C /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */,
-				60BDA3232412726D0065DEA9 /* ExchangeDelegate.swift */,
-				60BDA325241279980065DEA9 /* DataConvertible.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		60BDA320241270F60065DEA9 /* bluetooth */ = {
+		80471AD92411772A001DCFA0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				60BDA321241271840065DEA9 /* Exchange.swift */,
+				80471ADF241180B5001DCFA0 /* Protocol */,
+				80471ADE241180B0001DCFA0 /* Presenter */,
+				80471ADD241180A8001DCFA0 /* Model */,
+				80471ADC241180A6001DCFA0 /* View */,
 			);
-			path = bluetooth;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		80471ADC241180A6001DCFA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80471AE0241180C4001DCFA0 /* LoginView.swift */,
+				80471AE6241180F7001DCFA0 /* LoginStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80471ADD241180A8001DCFA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80471ADE241180B0001DCFA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				80471AE4241180DC001DCFA0 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		80471ADF241180B5001DCFA0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				80471AE2241180D4001DCFA0 /* LoginProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		808AEBDA240EF66A00DC90DB = {
@@ -101,17 +138,83 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
-				2DB4ADA8241022EE0016C64C /* Protocol */,
-				2DB4ADA72410227D0016C64C /* View */,
-				2DB4ADA6241022690016C64C /* Presenter */,
+				80F9174E2416DBEB0063FE37 /* Extensions */,
+				80F917482416DBCE0063FE37 /* ClockInScreen */,
+				80F9173B2416DBC10063FE37 /* InitialScreen */,
+				80471AE9241186F5001DCFA0 /* ArduinoClockIn.entitlements */,
+				80471AD92411772A001DCFA0 /* Login */,
 				808AEBE6240EF66B00DC90DB /* AppDelegate.swift */,
 				808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */,
-				808AEBEC240EF66B00DC90DB /* Main.storyboard */,
 				808AEBEF240EF66F00DC90DB /* Assets.xcassets */,
 				808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */,
 				808AEBF4240EF66F00DC90DB /* Info.plist */,
 			);
 			path = ArduinoClockIn;
+			sourceTree = "<group>";
+		};
+		80F9173B2416DBC10063FE37 /* InitialScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80F9173C2416DBC10063FE37 /* Presenter */,
+				80F9173E2416DBC10063FE37 /* Protocol */,
+				80F917402416DBC10063FE37 /* View */,
+			);
+			path = InitialScreen;
+			sourceTree = "<group>";
+		};
+		80F9173C2416DBC10063FE37 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				606A064E2417EE0700844462 /* ExchangePresenter.swift */,
+				80F9173D2416DBC10063FE37 /* AuthenticationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		80F9173E2416DBC10063FE37 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				606A06502417EE2700844462 /* ExchangeDelegate.swift */,
+				606A06512417EE2700844462 /* DataConvertible.swift */,
+				80F9173F2416DBC10063FE37 /* AuthenticationProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		80F917402416DBC10063FE37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80F917412416DBC10063FE37 /* ViewController.swift */,
+				80F917422416DBC10063FE37 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80F917482416DBCE0063FE37 /* ClockInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				606A0655241802C200844462 /* Protocol */,
+				606A0654241802AB00844462 /* Presenter */,
+				80F917492416DBCE0063FE37 /* View */,
+			);
+			path = ClockInScreen;
+			sourceTree = "<group>";
+		};
+		80F917492416DBCE0063FE37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80F9174A2416DBCE0063FE37 /* ClockInViewController.swift */,
+				80F9174B2416DBCE0063FE37 /* ClockIn.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80F9174E2416DBEB0063FE37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80F9174F2416DBEB0063FE37 /* Extension_UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +275,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F9174D2416DBCE0063FE37 /* ClockIn.storyboard in Resources */,
 				808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */,
+				80F917472416DBC10063FE37 /* Main.storyboard in Resources */,
 				808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */,
-				808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */,
+				80471AE7241180F7001DCFA0 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,34 +290,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */,
-				2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */,
-				60BDA3242412726D0065DEA9 /* ExchangeDelegate.swift in Sources */,
-				60BDA322241271840065DEA9 /* Exchange.swift in Sources */,
-				808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */,
+				80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */,
+				80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */,
+				80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */,
+				606A06522417EE2700844462 /* ExchangeDelegate.swift in Sources */,
+				80F917502416DBEB0063FE37 /* Extension_UIColor.swift in Sources */,
+				606A06532417EE2700844462 /* DataConvertible.swift in Sources */,
+				80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */,
+				606A064F2417EE0700844462 /* ExchangePresenter.swift in Sources */,
 				808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */,
+				80F9174C2416DBCE0063FE37 /* ClockInViewController.swift in Sources */,
 				808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */,
-				60BDA326241279980065DEA9 /* DataConvertible.swift in Sources */,
+				80F917462416DBC10063FE37 /* ViewController.swift in Sources */,
+				80F917452416DBC10063FE37 /* AuthenticationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		808AEBEC240EF66B00DC90DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808AEBED240EF66B00DC90DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				808AEBF2240EF66F00DC90DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80F917422416DBC10063FE37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F917432416DBC10063FE37 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,14 +446,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArduinoClockIn/ArduinoClockIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 784JV863X8;
+				DEVELOPMENT_TEAM = 4NP5AK64M5;
 				INFOPLIST_FILE = ArduinoClockIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ArduinoClockInn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArduinoClockIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,14 +466,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArduinoClockIn/ArduinoClockIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 784JV863X8;
+				DEVELOPMENT_TEAM = 4NP5AK64M5;
 				INFOPLIST_FILE = ArduinoClockIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ArduinoClockInn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArduinoClockIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
