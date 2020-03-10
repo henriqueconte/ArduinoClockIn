@@ -76,6 +76,7 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
             }
             viewController.token = userIdentifier
             viewController.userName = userName
+            viewController.modalPresentationStyle = .fullScreen
             
             self.present(viewController, animated: true, completion: nil)
             // TODO: Pegar identifier e mandar para banco de dados/airtable
