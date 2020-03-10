@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8038D0562418030200AFA4DA /* UserInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8038D0552418030200AFA4DA /* UserInformations.swift */; };
 		80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE0241180C4001DCFA0 /* LoginView.swift */; };
 		80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE2241180D4001DCFA0 /* LoginProtocol.swift */; };
 		80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE4241180DC001DCFA0 /* LoginPresenter.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8038D0552418030200AFA4DA /* UserInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformations.swift; sourceTree = "<group>"; };
 		80471AE0241180C4001DCFA0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		80471AE2241180D4001DCFA0 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		80471AE4241180DC001DCFA0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8038D054241802F300AFA4DA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8038D0552418030200AFA4DA /* UserInformations.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		80471AD92411772A001DCFA0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
+				8038D054241802F300AFA4DA /* User */,
 				80F9174E2416DBEB0063FE37 /* Extensions */,
 				80F917482416DBCE0063FE37 /* ClockInScreen */,
 				80F9173B2416DBC10063FE37 /* InitialScreen */,
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8038D0562418030200AFA4DA /* UserInformations.swift in Sources */,
 				80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */,
 				80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */,
 				80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */,

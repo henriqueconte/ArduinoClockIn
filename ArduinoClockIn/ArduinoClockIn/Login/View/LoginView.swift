@@ -18,6 +18,7 @@ class LoginView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProviderLoginView()
+        loginPresenter = LoginPresenter()
     }
     
     private func setupProviderLoginView() {
@@ -70,8 +71,10 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
             
             let userIdentifier = appleIDCredential.user
             
-            // TODO: Pegar identifier e mandar para banco de dados/airtable
+            loginPresenter?.saveLoggedUser(userID: userIdentifier)
             
+            performSegue(withIdentifier: "goToFirstScreen", sender: nil)
+            // TODO: Pegar identifier e mandar para banco de dados/airtable
         }
     }
     

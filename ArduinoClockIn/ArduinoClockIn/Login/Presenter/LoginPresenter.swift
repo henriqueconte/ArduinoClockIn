@@ -15,3 +15,10 @@ class LoginPresenter  {
     
 }
 
+extension LoginPresenter: LoginProtocol {
+    
+    func saveLoggedUser(userID: String) {
+        UserDefaults.standard.setValue(userID, forKey: "userID")
+    }
+}
+

@@ -10,17 +10,28 @@
         <!--Login View-->
         <scene sceneID="X1f-9B-6Wu">
             <objects>
-                <viewController id="AgA-p6-DVO" customClass="LoginView" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginSB" id="AgA-p6-DVO" customClass="LoginView" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hW2-Xy-WnC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ENK-lc-RWz"/>
                     </view>
+                    <connections>
+                        <segue destination="Z4d-Yp-gYc" kind="presentation" identifier="goToFirstScreen" modalPresentationStyle="fullScreen" id="AL3-Rb-U0C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xu-G7-1e8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="88" y="143"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="KTT-Id-MlS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Z4d-Yp-gYc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHc-mN-rJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="143"/>
         </scene>
     </scenes>
 </document>
