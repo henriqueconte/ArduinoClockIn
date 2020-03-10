@@ -44,4 +44,17 @@ class AirtableClockinDB {
             }
         }
     }
+    
+//    func getLastClock(handler: @escaping (Clockin?, Error?) -> Void) {
+//        airtable.fetchAll(table: tableClockins) { (objects: [Clockin], error: Error?) in
+//            if let error = error {
+//                handler(nil, error)
+//            } else {
+//                let clockins = objects.filter{
+//                    $0.owner == self.userId && (includeClockOuts ? true : !$0.isClockOut)
+//                }
+//                handler(clockins, nil)
+//            }
+//        }
+//    }
 }

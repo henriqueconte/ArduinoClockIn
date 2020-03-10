@@ -69,10 +69,14 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             let userIdentifier = appleIDCredential.user
-            
+            let userName = appleIDCredential.fullName?.givenName
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyBoard.instantiateInitialViewController() as! ViewController
+            guard let viewController = storyBoard.instantiateInitialViewController() as? ViewController else {
+                return
+            }
             viewController.token = userIdentifier
+            viewController.userName = userName
+            
             self.present(viewController, animated: true, completion: nil)
             // TODO: Pegar identifier e mandar para banco de dados/airtable
             

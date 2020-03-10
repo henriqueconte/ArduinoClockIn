@@ -140,9 +140,10 @@ extension AirtableTableSchemaFieldKey: Equatable {
 }
 
 extension AirtableTableSchemaFieldKey: Hashable {
-    public var hashValue: Int {
-        return fieldName.hashValue + fieldType.hashValue
-    }
+//    public var hashValue: Int {
+//        return fieldName.hashValue + fieldType.hashValue
+//    }
+
 }
 
 extension AirtableTableSchemaFieldKey {

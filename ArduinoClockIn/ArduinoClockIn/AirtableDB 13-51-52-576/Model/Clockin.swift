@@ -14,6 +14,7 @@ struct Clockin {
     var time: Date = Date()
     var isClockOut: Bool = false
     var owner: String = ""
+    var name: String = ""
 }
 
 extension Clockin: AirtableObject {
@@ -22,6 +23,7 @@ extension Clockin: AirtableObject {
         fields.append((fieldName: "time", fieldType: .dateWithHour))
         fields.append((fieldName: "isClockOut", fieldType: .checkbox))
         fields.append((fieldName: "owner", fieldType: .singleLineText))
+        fields.append((fieldName: "name", fieldType: .singleLineText))
         return fields
     }
     
@@ -30,6 +32,7 @@ extension Clockin: AirtableObject {
         case AirtableTableSchemaFieldKey(fieldName: "time", fieldType: .dateWithHour): return self.time
         case AirtableTableSchemaFieldKey(fieldName: "isClockOut", fieldType: .checkbox): return self.isClockOut
         case AirtableTableSchemaFieldKey(fieldName: "owner", fieldType: .singleLineText): return self.owner
+        case AirtableTableSchemaFieldKey(fieldName: "name", fieldType: .singleLineText): return self.name
         default: return nil
         }
     }
@@ -41,6 +44,7 @@ extension Clockin: AirtableObject {
             case AirtableTableSchemaFieldKey(fieldName: "time", fieldType: .dateWithHour): self.time = element.value.dateValue
             case AirtableTableSchemaFieldKey(fieldName: "isClockOut", fieldType: .checkbox): self.isClockOut = element.value.boolValue
             case AirtableTableSchemaFieldKey(fieldName: "owner", fieldType: .singleLineText): self.owner = element.value.stringValue
+            case AirtableTableSchemaFieldKey(fieldName: "name", fieldType: .singleLineText): self.owner = element.value.stringValue
             default: break
             }
         }
