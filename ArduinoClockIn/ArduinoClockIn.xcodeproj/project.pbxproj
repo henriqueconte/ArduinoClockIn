@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */; };
 		2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */; };
+		2DFD34672416BD2C00BA0ADA /* AirtableClockinDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD34662416BD2C00BA0ADA /* AirtableClockinDB.swift */; };
+		2DFD34692416BF6200BA0ADA /* Clockin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD34682416BF6200BA0ADA /* Clockin.swift */; };
+		2DFD346D2416D0B700BA0ADA /* AirtableUserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD346C2416D0B700BA0ADA /* AirtableUserDB.swift */; };
 		808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE6240EF66B00DC90DB /* AppDelegate.swift */; };
 		808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */; };
 		808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808AEBEA240EF66B00DC90DB /* ViewController.swift */; };
 		808AEBEE240EF66B00DC90DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEC240EF66B00DC90DB /* Main.storyboard */; };
 		808AEBF0240EF66F00DC90DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBEF240EF66F00DC90DB /* Assets.xcassets */; };
 		808AEBF3240EF66F00DC90DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AEBF1240EF66F00DC90DB /* LaunchScreen.storyboard */; };
+		9D65CAC58077A8C096096CCC /* Pods_ArduinoClockIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E86BC6A756FE5ADA9F9CEB /* Pods_ArduinoClockIn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ADAF0C74B4B562900377D70 /* Pods-ArduinoClockIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArduinoClockIn.release.xcconfig"; path = "Target Support Files/Pods-ArduinoClockIn/Pods-ArduinoClockIn.release.xcconfig"; sourceTree = "<group>"; };
 		2DB4ADA42410225D0016C64C /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		2DB4ADA9241023070016C64C /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		2DFD34662416BD2C00BA0ADA /* AirtableClockinDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableClockinDB.swift; sourceTree = "<group>"; };
+		2DFD34682416BF6200BA0ADA /* Clockin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockin.swift; sourceTree = "<group>"; };
+		2DFD346C2416D0B700BA0ADA /* AirtableUserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableUserDB.swift; sourceTree = "<group>"; };
 		808AEBE3240EF66B00DC90DB /* ArduinoClockIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArduinoClockIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AEBE6240EF66B00DC90DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808AEBE8240EF66B00DC90DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		808AEBEF240EF66F00DC90DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808AEBF2240EF66F00DC90DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808AEBF4240EF66F00DC90DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E86BC6A756FE5ADA9F9CEB /* Pods_ArduinoClockIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArduinoClockIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96218417C08C475A9AE5794 /* Pods-ArduinoClockIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArduinoClockIn.debug.xcconfig"; path = "Target Support Files/Pods-ArduinoClockIn/Pods-ArduinoClockIn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +45,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D65CAC58077A8C096096CCC /* Pods_ArduinoClockIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07E21CA1EF4B67F95DEDDAF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C96218417C08C475A9AE5794 /* Pods-ArduinoClockIn.debug.xcconfig */,
+				1ADAF0C74B4B562900377D70 /* Pods-ArduinoClockIn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2DB4ADA6241022690016C64C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,11 +85,31 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2DFD34652416BCD300BA0ADA /* AirtableDB */ = {
+			isa = PBXGroup;
+			children = (
+				2DFD346E2416D0C000BA0ADA /* Model */,
+				2DFD34662416BD2C00BA0ADA /* AirtableClockinDB.swift */,
+				2DFD346C2416D0B700BA0ADA /* AirtableUserDB.swift */,
+			);
+			path = AirtableDB;
+			sourceTree = "<group>";
+		};
+		2DFD346E2416D0C000BA0ADA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DFD34682416BF6200BA0ADA /* Clockin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		808AEBDA240EF66A00DC90DB = {
 			isa = PBXGroup;
 			children = (
 				808AEBE5240EF66B00DC90DB /* ArduinoClockIn */,
 				808AEBE4240EF66B00DC90DB /* Products */,
+				07E21CA1EF4B67F95DEDDAF7 /* Pods */,
+				82144B20B52D40E0A118D381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +124,7 @@
 		808AEBE5240EF66B00DC90DB /* ArduinoClockIn */ = {
 			isa = PBXGroup;
 			children = (
+				2DFD34652416BCD300BA0ADA /* AirtableDB */,
 				2DB4ADA8241022EE0016C64C /* Protocol */,
 				2DB4ADA72410227D0016C64C /* View */,
 				2DB4ADA6241022690016C64C /* Presenter */,
@@ -97,6 +138,14 @@
 			path = ArduinoClockIn;
 			sourceTree = "<group>";
 		};
+		82144B20B52D40E0A118D381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8E86BC6A756FE5ADA9F9CEB /* Pods_ArduinoClockIn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 808AEBF7240EF66F00DC90DB /* Build configuration list for PBXNativeTarget "ArduinoClockIn" */;
 			buildPhases = (
+				8D70351F71DB9DB1D463DCCA /* [CP] Check Pods Manifest.lock */,
 				808AEBDF240EF66A00DC90DB /* Sources */,
 				808AEBE0240EF66A00DC90DB /* Frameworks */,
 				808AEBE1240EF66A00DC90DB /* Resources */,
+				76F9CB4310228FAEAC05069B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,16 +214,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76F9CB4310228FAEAC05069B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArduinoClockIn/Pods-ArduinoClockIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArduinoClockIn/Pods-ArduinoClockIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArduinoClockIn/Pods-ArduinoClockIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D70351F71DB9DB1D463DCCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArduinoClockIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		808AEBDF240EF66A00DC90DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFD346D2416D0B700BA0ADA /* AirtableUserDB.swift in Sources */,
 				2DB4ADA52410225D0016C64C /* AuthenticationPresenter.swift in Sources */,
 				2DB4ADAA241023070016C64C /* AuthenticationProtocol.swift in Sources */,
 				808AEBEB240EF66B00DC90DB /* ViewController.swift in Sources */,
 				808AEBE7240EF66B00DC90DB /* AppDelegate.swift in Sources */,
+				2DFD34692416BF6200BA0ADA /* Clockin.swift in Sources */,
 				808AEBE9240EF66B00DC90DB /* SceneDelegate.swift in Sources */,
+				2DFD34672416BD2C00BA0ADA /* AirtableClockinDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +410,7 @@
 		};
 		808AEBF8240EF66F00DC90DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96218417C08C475A9AE5794 /* Pods-ArduinoClockIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +429,7 @@
 		};
 		808AEBF9240EF66F00DC90DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADAF0C74B4B562900377D70 /* Pods-ArduinoClockIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
