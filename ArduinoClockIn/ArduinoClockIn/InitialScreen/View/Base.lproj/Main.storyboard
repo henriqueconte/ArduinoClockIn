@@ -64,6 +64,7 @@
                                         </state>
                                         <connections>
                                             <action selector="RecordsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8f-kZ-BBd"/>
+                                            <segue destination="VV0-o7-JpP" kind="presentation" id="dff-sc-RpV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,15 +94,25 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--Teste-->
+        <!--ClockInScreen-->
         <scene sceneID="R4l-rc-Dnt">
             <objects>
-                <viewControllerPlaceholder storyboardName="ClockIn" referencedIdentifier="Teste" id="fDc-ua-egP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ClockIn" referencedIdentifier="ClockInScreen" id="fDc-ua-egP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="z6D-YO-phw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LX-NT-hK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="767" y="127"/>
+        </scene>
+        <!--RecordsScreen-->
+        <scene sceneID="kYF-Ct-wSY">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RecordsScreen" storyboardName="Records" referencedIdentifier="RecordsScreen" id="VV0-o7-JpP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VqC-al-2P1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooN-i3-vV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="183"/>
         </scene>
     </scenes>
     <resources>
