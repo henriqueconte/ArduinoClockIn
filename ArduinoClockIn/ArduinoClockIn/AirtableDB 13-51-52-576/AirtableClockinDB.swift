@@ -16,8 +16,8 @@ class AirtableClockinDB {
     let userId: String!
     let tableClockins = "ClockIns"
     
-    init(schema: AirtableTableSchema, userId: String) {
-        airtable = Airtable(apiKey: apiKey, apiBaseUrl: apiBaseUrl, schema: schema)
+    init(userId: String) {
+        airtable = Airtable(apiKey: apiKey, apiBaseUrl: apiBaseUrl, schema: Clockin.schema)
         self.userId = userId
     }
     

@@ -38,8 +38,8 @@ extension Clockin: AirtableObject {
         self.id = id
         tableSchemaKeys.forEach { element in
             switch element.key {
-            case AirtableTableSchemaFieldKey(fieldName: "time", fieldType: .singleLineText): self.time = element.value.dateValue
-            case AirtableTableSchemaFieldKey(fieldName: "isClockOut", fieldType: .singleLineText): self.isClockOut = element.value.boolValue
+            case AirtableTableSchemaFieldKey(fieldName: "time", fieldType: .dateWithHour): self.time = element.value.dateValue
+            case AirtableTableSchemaFieldKey(fieldName: "isClockOut", fieldType: .checkbox): self.isClockOut = element.value.boolValue
             case AirtableTableSchemaFieldKey(fieldName: "owner", fieldType: .singleLineText): self.owner = element.value.stringValue
             default: break
             }
