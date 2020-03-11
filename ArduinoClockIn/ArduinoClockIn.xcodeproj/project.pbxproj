@@ -10,6 +10,7 @@
 		606A065E241817E300844462 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606A065D241817E300844462 /* Report.storyboard */; };
 		606A06602418182100844462 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A065F2418182100844462 /* ReportViewController.swift */; };
 		606A06622418221500844462 /* ReportHeaderTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A06612418221500844462 /* ReportHeaderTableVIewCell.swift */; };
+		606A06662419618800844462 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606A06652419618800844462 /* InfoTableViewCell.swift */; };
 		80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE0241180C4001DCFA0 /* LoginView.swift */; };
 		80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE2241180D4001DCFA0 /* LoginProtocol.swift */; };
 		80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80471AE4241180DC001DCFA0 /* LoginPresenter.swift */; };
@@ -31,6 +32,7 @@
 		606A065D241817E300844462 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		606A065F2418182100844462 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		606A06612418221500844462 /* ReportHeaderTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHeaderTableVIewCell.swift; sourceTree = "<group>"; };
+		606A06652419618800844462 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		80471AE0241180C4001DCFA0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		80471AE2241180D4001DCFA0 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		80471AE4241180DC001DCFA0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				606A065D241817E300844462 /* Report.storyboard */,
 				606A065F2418182100844462 /* ReportViewController.swift */,
 				606A06612418221500844462 /* ReportHeaderTableVIewCell.swift */,
+				606A06652419618800844462 /* InfoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				80471AE5241180DC001DCFA0 /* LoginPresenter.swift in Sources */,
 				80471AE1241180C4001DCFA0 /* LoginView.swift in Sources */,
 				80F917442416DBC10063FE37 /* AuthenticationPresenter.swift in Sources */,
+				606A06662419618800844462 /* InfoTableViewCell.swift in Sources */,
 				80F917502416DBEB0063FE37 /* Extension_UIColor.swift in Sources */,
 				606A06602418182100844462 /* ReportViewController.swift in Sources */,
 				80471AE3241180D4001DCFA0 /* LoginProtocol.swift in Sources */,

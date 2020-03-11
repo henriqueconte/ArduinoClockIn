@@ -32,9 +32,9 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Relatório" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-Jh-9M1">
-                                                    <rect key="frame" x="139" y="228" width="92" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-Jh-9M1">
+                                                    <rect key="frame" x="150.66666666666666" y="229.33333333333334" width="74" height="28.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -45,7 +45,7 @@
                                                 <constraint firstItem="9GY-qc-j7o" firstAttribute="top" secondItem="jvo-1h-1qK" secondAttribute="topMargin" constant="91" id="Ieb-2h-2wD"/>
                                                 <constraint firstItem="gdz-Jh-9M1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9GY-qc-j7o" secondAttribute="bottom" constant="20" id="NNV-ps-lpj"/>
                                                 <constraint firstItem="9GY-qc-j7o" firstAttribute="centerX" secondItem="jvo-1h-1qK" secondAttribute="centerX" id="NvF-fG-dic"/>
-                                                <constraint firstItem="gdz-Jh-9M1" firstAttribute="centerX" secondItem="jvo-1h-1qK" secondAttribute="centerX" id="dDm-Zp-3bP"/>
+                                                <constraint firstItem="gdz-Jh-9M1" firstAttribute="centerX" secondItem="jvo-1h-1qK" secondAttribute="centerX" id="bAl-7z-4hb"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="gdz-Jh-9M1" secondAttribute="bottom" constant="20" id="oub-tO-CuJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -55,34 +55,56 @@
                                             <outlet property="reportLabel" destination="gdz-Jh-9M1" id="3lX-9O-tzS"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="128" id="isj-s9-XQ2">
-                                        <rect key="frame" x="0.0" y="317" width="375" height="128"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" id="isj-s9-XQ2" userLabel="infoCell" customClass="InfoTableViewCell" customModule="ArduinoClockIn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="317" width="375" height="149.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isj-s9-XQ2" id="CXI-wx-fcC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isj-s9-XQ2" id="CXI-wx-fcC" customClass="InfoTableViewCell" customModule="ArduinoClockIn" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semana 09/03 a 13/03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-Xe-PHP">
-                                                    <rect key="frame" x="95.333333333333329" y="34" width="184.33333333333337" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : 4h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NE-0E-GPU">
-                                                    <rect key="frame" x="152" y="70" width="71" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sho-VM-pAT">
+                                                    <rect key="frame" x="16" y="18.999999999999993" width="343" height="111.33333333333331"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uy7-qo-BaO">
+                                                            <rect key="frame" x="23" y="23" width="297" height="65.333333333333329"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semana 09/03 a 13/03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-Xe-PHP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="25.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Total : 4h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NE-0E-GPU">
+                                                                    <rect key="frame" x="0.0" y="40.333333333333329" width="297" height="25"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Uy7-qo-BaO" firstAttribute="top" secondItem="Sho-VM-pAT" secondAttribute="top" constant="23" id="5B0-oA-z0f"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="MeF-eb-PVZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Uy7-qo-BaO" secondAttribute="trailing" constant="23" id="TZ9-H4-U77"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Uy7-qo-BaO" secondAttribute="bottom" constant="23" id="kvK-f0-gz9"/>
+                                                        <constraint firstItem="Uy7-qo-BaO" firstAttribute="leading" secondItem="Sho-VM-pAT" secondAttribute="leading" constant="23" id="oCo-27-all"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1NE-0E-GPU" firstAttribute="centerX" secondItem="CXI-wx-fcC" secondAttribute="centerX" id="2hn-Sd-B8p"/>
-                                                <constraint firstItem="mqm-Xe-PHP" firstAttribute="centerX" secondItem="CXI-wx-fcC" secondAttribute="centerX" id="Mua-dW-GSR"/>
-                                                <constraint firstItem="mqm-Xe-PHP" firstAttribute="top" secondItem="CXI-wx-fcC" secondAttribute="topMargin" constant="23" id="Vge-ga-vVl"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="1NE-0E-GPU" secondAttribute="bottom" constant="22" id="VjJ-Uh-pzn"/>
-                                                <constraint firstItem="1NE-0E-GPU" firstAttribute="top" secondItem="mqm-Xe-PHP" secondAttribute="bottom" constant="15" id="Yix-Ff-m2q"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Sho-VM-pAT" secondAttribute="bottom" constant="8" id="0Ma-Y8-aR7"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sho-VM-pAT" secondAttribute="trailing" constant="16" id="Anj-CT-vFy"/>
+                                                <constraint firstItem="Sho-VM-pAT" firstAttribute="top" secondItem="CXI-wx-fcC" secondAttribute="topMargin" constant="8" id="Fm9-5r-Sba"/>
+                                                <constraint firstItem="Sho-VM-pAT" firstAttribute="leading" secondItem="CXI-wx-fcC" secondAttribute="leading" constant="16" id="aaq-M6-qmg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateText" destination="mqm-Xe-PHP" id="NNd-2S-w1v"/>
+                                            <outlet property="timeText" destination="1NE-0E-GPU" id="g7N-n9-FsT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

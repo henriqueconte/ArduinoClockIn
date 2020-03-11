@@ -6,7 +6,6 @@
 //  Copyright © 2020 Henrique Figueiredo Conte. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class ReportHeaderTableViewCell: UITableViewCell {
