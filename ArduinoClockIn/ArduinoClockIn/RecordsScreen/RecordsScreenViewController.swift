@@ -13,6 +13,8 @@ class RecordsScreenViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var workdays: [Workday] = []
+    
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -25,12 +27,49 @@ class RecordsScreenViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        let userId = UserDefaults.standard.value(forKey: "userID") as? String
+        if let userId = userId {
+            AirtableClockinDB(userId: userId).getMyClockins(includeClockOuts: true, handler: { (clockins, error) in
+                if let error = error {
+                    print(error)
+                } else {
+                    var groupedClockins: [Clockin] = []
+                    var groupedClockouts: [Clockin] = []
+                    let sortedClockins = clockins.sorted { clockin1, clockin2 in
+                        clockin1.time < clockin2.time
+                    }
+                    sortedClockins.forEach {
+                        if $0.isClockOut {
+                            groupedClockouts.append($0)
+                        } else {
+                            groupedClockins.append($0)
+                        }
+                    }
+                    
+                    if groupedClockins.count == groupedClockouts.count {
+                        for i in 0 ..< groupedClockins.count {
+                            self.workdays.append(Workday(clockin: groupedClockins[i], clockout: groupedClockouts[i]))
+                        }
+                    } else {
+                        for i in 0 ..< groupedClockins.count - 1 {
+                            self.workdays.append(Workday(clockin: groupedClockins[i], clockout: groupedClockouts[i]))
+                        }
+                        self.workdays.append(Workday(clockin: groupedClockins[groupedClockins.count - 1], clockout: nil))
+                    }
+                    self.workdays.reverse()
+                    
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            })
+        }
     }
 }
 
 extension RecordsScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return workdays.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,12 +77,13 @@ extension RecordsScreenViewController: UITableViewDataSource, UITableViewDelegat
         
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell") as? ProfileCell else { return UITableViewCell() }
-            
             DispatchQueue.main.async {
                 cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.width/2
+                
             }
             return cell
         } else {
+            cell.configure(workday: workdays[indexPath.row - 1])
             cell.contentView.viewWithTag(2)?.layer.shadowOpacity = 0.4
             cell.contentView.viewWithTag(2)?.layer.shadowRadius = 3
             cell.contentView.viewWithTag(2)?.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)

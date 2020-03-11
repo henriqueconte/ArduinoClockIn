@@ -29,7 +29,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-v9-z9I">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="317.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Completo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-oT-IAU">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Ferreira" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-oT-IAU">
                                                             <rect key="frame" x="20" y="247" width="374" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,9 +151,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="ClockInDate" destination="I6h-sc-GK2" id="iL6-YC-cZq"/>
-                                            <outlet property="EnteringTime" destination="nC7-eW-S92" id="pkW-6n-Ndp"/>
-                                            <outlet property="LeavingTime" destination="GCY-Kg-hqN" id="PpX-vc-bZl"/>
+                                            <outlet property="clockInDate" destination="I6h-sc-GK2" id="iL6-YC-cZq"/>
+                                            <outlet property="enteringTime" destination="GCY-Kg-hqN" id="Gqb-5a-lYK"/>
+                                            <outlet property="leavingTime" destination="nC7-eW-S92" id="VqY-9T-AGN"/>
                                             <outlet property="totalTimeWorked" destination="PmM-qp-3P7" id="Chq-EA-IPQ"/>
                                         </connections>
                                     </tableViewCell>
