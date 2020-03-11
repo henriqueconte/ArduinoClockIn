@@ -67,7 +67,7 @@ extension ViewController: AuthenticationProtocol {
 
 extension ViewController: ExchangeDelegate{
     func communicatorDidConnect(_ communicator: ExchangePresenter) {
-        view.backgroundColor = .gray
+//        view.backgroundColor = .gray
     }
     
     func communicator(_ communicator: ExchangePresenter, didRead data: Data) {
