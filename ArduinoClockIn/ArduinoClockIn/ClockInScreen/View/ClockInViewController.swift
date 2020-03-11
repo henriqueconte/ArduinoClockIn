@@ -55,6 +55,8 @@ class ClockInViewController: UIViewController {
                     }
                 }
             }
+        } else {
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
