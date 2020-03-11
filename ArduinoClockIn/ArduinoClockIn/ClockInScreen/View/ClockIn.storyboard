@@ -10,7 +10,7 @@
         <!--Clock In View Controller-->
         <scene sceneID="IGM-Rn-ast">
             <objects>
-                <viewController storyboardIdentifier="Teste" id="gdb-vU-8KI" customClass="ClockInViewController" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClockInScreen" id="gdb-vU-8KI" customClass="ClockInViewController" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lqb-M1-wNk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

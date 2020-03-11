@@ -104,9 +104,9 @@ extension AirtableAttachment: Equatable {
 }
 
 extension AirtableAttachment: Hashable {
-    public var hashValue: Int {
-        return self.fileName.hashValue + self.url.hashValue
-    }
+//    public var hashValue: Int {
+//        return self.fileName.hashValue + self.url.hashValue
+//    }
 }
 
 extension AirtableAttachment {
@@ -143,7 +143,6 @@ extension AirtableTableSchemaFieldKey: Hashable {
 //    public var hashValue: Int {
 //        return fieldName.hashValue + fieldType.hashValue
 //    }
-
 }
 
 extension AirtableTableSchemaFieldKey {
