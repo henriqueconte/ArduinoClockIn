@@ -13,5 +13,6 @@ class InfoTableViewCell: UITableViewCell {
     @IBOutlet weak var timeText: UILabel!
     @IBOutlet weak var dateText: UILabel!
     
+    @IBOutlet weak var cardView: UIView!
 }
 

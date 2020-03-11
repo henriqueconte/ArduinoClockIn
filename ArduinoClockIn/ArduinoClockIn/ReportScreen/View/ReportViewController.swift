@@ -42,6 +42,12 @@ extension ReportViewController: UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? InfoTableViewCell  else {
                 fatalError("The dequeued cell is not an instance of TableViewCell.")
             }
+            cell.cardView.layer.shadowColor = #colorLiteral(red: 0, green: 0.2994042933, blue: 0.6254397035, alpha: 1)
+            cell.cardView.layer.shadowOpacity = 0.3
+            cell.cardView.layer.shadowOffset = CGSize(width: 0, height: 2)
+            cell.cardView.layer.shadowRadius = 5
+            
+            cell.cardView.layer.cornerRadius = 10
             cell.dateText.text = "Semana 0/0 a 0/0"
             cell.timeText.text = "Total: 0h"
             cell.backgroundColor = .clear
@@ -51,6 +57,12 @@ extension ReportViewController: UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? InfoTableViewCell  else {
                 fatalError("The dequeued cell is not an instance of TableViewCell.")
             }
+            cell.cardView.layer.shadowColor = #colorLiteral(red: 0, green: 0.2994042933, blue: 0.6254397035, alpha: 1)
+            cell.cardView.layer.shadowOpacity = 0.3
+            cell.cardView.layer.shadowOffset = CGSize(width: 0, height: 2)
+            cell.cardView.layer.shadowRadius = 5
+            
+            cell.cardView.layer.cornerRadius = 10
             cell.dateText.text = "MARÇO"
             cell.timeText.isHidden = true
             cell.timeText.text = "Total: 8h"
