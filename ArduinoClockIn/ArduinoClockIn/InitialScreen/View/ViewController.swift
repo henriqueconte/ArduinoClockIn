@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var userName: String?
     var clockInPressed = false
     var blackBlur: UIView!
+    private var communicator: ExchangePresenter!  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,8 @@ class ViewController: UIViewController {
         clockInButton.layer.cornerRadius = 10
         recordsButton.layer.cornerRadius = 10
         
+        self.communicator = ExchangePresenter(delegate: self)
+
         token = UserDefaults.standard.value(forKey: "userID") as? String
         userName = UserDefaults.standard.value(forKey: "userName") as? String
         
@@ -64,6 +67,10 @@ class ViewController: UIViewController {
             }
         }
     }
+
+    // @IBAction func send(_ sender: Any) {
+    //     self.communicator.send(value: "A")
+    // }
     
     @IBAction func OperDoorButtonPressed(_ sender: UIButton) {
         clockInPressed = false
@@ -82,13 +89,12 @@ class ViewController: UIViewController {
 extension ViewController: AuthenticationProtocol {
     func authenticationError(_ error: Error) {
         print(error.localizedDescription)
-
         // Do something if error
     }
     
     func authenticationSuccess() {
         // Move to the main thread because a state update triggers UI changes.
-        if clockInPressed {
+        if clockInPressed { 
             if let token = token { // tag == 1 means 👍
                 
                 DispatchQueue.main.async {
@@ -114,7 +120,8 @@ extension ViewController: AuthenticationProtocol {
                 }
             }
         }
-        else {
+        else {          // Door opened withou clock in
+            self.communicator.send(value: "A")
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
                 self.performSegue(withIdentifier: "AuthenticationSucceeded", sender: self)
@@ -124,4 +131,22 @@ extension ViewController: AuthenticationProtocol {
     
     
 }
+
+extension ViewController: ExchangeDelegate{
+    func communicatorDidConnect(_ communicator: ExchangePresenter) {
+//        view.backgroundColor = .gray
+    }
+    
+    func communicator(_ communicator: ExchangePresenter, didRead data: Data) {
+        print(#function)
+        print(String(data: data, encoding: .utf8) ?? "ERROR READ ")
+    }
+    
+    func communicator(_ communicator: ExchangePresenter, didWrite data: Data) {
+        print(#function)
+        print(String(data: data, encoding: .utf8) ?? "ERROR WRITE")
+    }
+    
+}
+
 
