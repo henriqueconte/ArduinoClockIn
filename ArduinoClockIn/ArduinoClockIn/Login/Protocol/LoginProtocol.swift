@@ -10,5 +10,5 @@ import Foundation
 
 
 protocol LoginProtocol {
-    
+    func saveLoggedUser(userID: String, userName: String)
 }

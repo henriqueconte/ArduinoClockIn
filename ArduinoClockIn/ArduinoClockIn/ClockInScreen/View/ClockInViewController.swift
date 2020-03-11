@@ -17,9 +17,11 @@ class ClockInViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var negativeButton: UIButton!
     @IBOutlet weak var positiveButton: UIButton!
+    @IBOutlet weak var clockInLabel: UILabel!
     
     var token: String?
     var userName: String?
+    var clockinShouldHide = false
     
     @IBAction func TouchCancel(_ sender: UIButton) {
         sender.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -76,6 +78,18 @@ class ClockInViewController: UIViewController {
         profilePicture.image = UIImage(named: "Profile_Test")
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
         view.backgroundColor = UIColor().colorWithGradient(frame: view.frame, colors: [#colorLiteral(red: 0.3529411765, green: 0.7843137255, blue: 0.9803921569, alpha: 1), #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)], startPoint: CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint(x: 0.5, y: 1.0))
+        
+        let clockedIn = UserDefaults.standard.value(forKey: "clockedIn") as? Bool ?? false
+        negativeButton.isHidden = clockinShouldHide
+        positiveButton.isHidden = clockinShouldHide
+        clockInLabel.isHidden = clockinShouldHide
+        
+        if clockinShouldHide {
+            welcomeLabel.text = clockedIn ? "Welcome, Rafael" : "Goodbye, Rafael"
+        } else {
+            welcomeLabel.text = clockedIn ? "Goodbye, Rafael" : "Welcome, Rafael"
+            clockInLabel.text = clockedIn ? "CLOCK OUT?" : "CLOCK IN?"
+        }
     }
     
     override func viewDidLayoutSubviews() { //Roda toda vez que uma subview é atualizada

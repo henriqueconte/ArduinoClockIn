@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdb-vU-8KI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdb-vU-8KI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,6 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="6QJ-M1-d5f"/>
                     </view>
                     <connections>
+                        <outlet property="clockInLabel" destination="uFB-sI-rK5" id="KtM-Wf-03Y"/>
                         <outlet property="negativeButton" destination="Knv-57-1eI" id="QXK-C8-vH4"/>
                         <outlet property="positiveButton" destination="DKE-D7-7xV" id="II4-7v-W68"/>
                         <outlet property="profilePicture" destination="5ML-Fz-u2m" id="hSQ-ez-8oX"/>
