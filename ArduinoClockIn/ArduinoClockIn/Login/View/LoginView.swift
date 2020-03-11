@@ -18,16 +18,22 @@ class LoginView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProviderLoginView()
+        setGradient()
+        loginPresenter = LoginPresenter()
     }
     
     private func setupProviderLoginView() {
         let authorizationButton = ASAuthorizationAppleIDButton()
         authorizationButton.addTarget(self, action: #selector(handleLoginWithApplePress), for: .touchUpInside)
-        authorizationButton.frame = CGRect(x: view.frame.size.width * 0.27,
-                                           y: view.frame.size.height * 0.5,
+        authorizationButton.frame = CGRect(x: view.frame.size.width * 0.26,
+                                           y: view.frame.size.height * 0.7,
                                            width: view.frame.size.width * 0.5,
                                            height: view.frame.size.height * 0.08)
         view.addSubview(authorizationButton)
+    }
+    
+    private func setGradient() {
+        self.view.backgroundColor = UIColor().colorWithGradient(frame: view.frame, colors: [#colorLiteral(red: 0.3529411765, green: 0.7843137255, blue: 0.9803921569, alpha: 1), #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)], startPoint: CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint(x: 0.5, y: 1.0))
     }
     
     @objc func handleLoginWithApplePress() {
@@ -47,7 +53,6 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
         authorizationController.delegate = self
         authorizationController.presentationContextProvider = self
         authorizationController.performRequests()
-        
     }
     
     private func performExistingAccountSetupFlows() {
@@ -69,9 +74,11 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             let userIdentifier = appleIDCredential.user
+            let userName = appleIDCredential.fullName?.givenName
             
-            // TODO: Pegar identifier e mandar para banco de dados/airtable
+            loginPresenter?.saveLoggedUser(userID: userIdentifier, userName: userName ?? "")
             
+            performSegue(withIdentifier: "goToFirstScreen", sender: nil)
         }
     }
     
