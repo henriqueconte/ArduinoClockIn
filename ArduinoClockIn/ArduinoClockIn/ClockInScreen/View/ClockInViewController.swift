@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftAirtable
 
 class ClockInViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class ClockInViewController: UIViewController {
     @IBOutlet weak var negativeButton: UIButton!
     @IBOutlet weak var positiveButton: UIButton!
     
+    var token: String?
+    var userName: String?
     
     @IBAction func TouchCancel(_ sender: UIButton) {
         sender.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -24,7 +27,37 @@ class ClockInViewController: UIViewController {
     
     @IBAction func ReleaseButtonInside(_ sender: UIButton) {
         sender.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        self.dismiss(animated: true, completion: nil)
+        if let token = token, sender.tag == 1 { // tag == 1 means 👍
+            let blackBlur = UIView()
+            blackBlur.frame = view.bounds
+            blackBlur.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4536065925)
+            let loader = UIActivityIndicatorView()
+            loader.frame = CGRect(x: blackBlur.frame.midX - 15, y: blackBlur.frame.midY - 15, width: 30, height: 30)
+            loader.style = .large
+            loader.startAnimating()
+            blackBlur.addSubview(loader)
+            view.addSubview(blackBlur)
+            let clockedIn = UserDefaults.standard.value(forKey: "clockedIn") as? Bool ?? false
+            AirtableClockinDB(userId: token).createClockin(clockin: Clockin(id: UUID().uuidString, time: Date(), isClockOut: clockedIn, owner: token, name: userName ?? "")) { success, error in
+                if success {
+                    UserDefaults.standard.set(!clockedIn, forKey: "clockedIn")
+                    NotificationCenter.default.post(name: Notification.Name("updateClockInButtonName"), object: nil)
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        blackBlur.removeFromSuperview()
+                    
+                        let alert = UIAlertController(title: "Some error occurred, try again", message: nil, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func PressedNegativeButton(_ sender: UIButton) {
