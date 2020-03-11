@@ -10,7 +10,7 @@
         <!--Clock In View Controller-->
         <scene sceneID="IGM-Rn-ast">
             <objects>
-                <viewController storyboardIdentifier="Teste" id="gdb-vU-8KI" customClass="ClockInViewController" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClockInScreen" id="gdb-vU-8KI" customClass="ClockInViewController" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lqb-M1-wNk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                                             <action selector="TouchCancel:" destination="gdb-vU-8KI" eventType="touchCancel" id="S8e-q5-wr9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-D7-7xV">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKE-D7-7xV">
                                         <rect key="frame" x="168" y="0.0" width="128" height="56"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -100,6 +100,7 @@
                         <viewLayoutGuide key="safeArea" id="6QJ-M1-d5f"/>
                     </view>
                     <connections>
+                        <outlet property="clockInLabel" destination="uFB-sI-rK5" id="KtM-Wf-03Y"/>
                         <outlet property="negativeButton" destination="Knv-57-1eI" id="QXK-C8-vH4"/>
                         <outlet property="positiveButton" destination="DKE-D7-7xV" id="II4-7v-W68"/>
                         <outlet property="profilePicture" destination="5ML-Fz-u2m" id="hSQ-ez-8oX"/>

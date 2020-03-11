@@ -74,11 +74,11 @@ extension LoginView: ASAuthorizationControllerDelegate, ASAuthorizationControlle
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             let userIdentifier = appleIDCredential.user
+            let userName = appleIDCredential.fullName?.givenName
             
-            loginPresenter?.saveLoggedUser(userID: userIdentifier)
+            loginPresenter?.saveLoggedUser(userID: userIdentifier, userName: userName ?? "")
             
             performSegue(withIdentifier: "goToFirstScreen", sender: nil)
-            // TODO: Pegar identifier e mandar para banco de dados/airtable
         }
     }
     
