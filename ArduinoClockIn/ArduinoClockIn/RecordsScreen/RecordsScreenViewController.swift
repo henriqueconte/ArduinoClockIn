@@ -14,13 +14,14 @@ class RecordsScreenViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    @IBAction func BackButton(_ sender: UIButton) {
+    @IBAction func backButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor().colorWithGradient(frame: view.frame, colors: [#colorLiteral(red: 0.3529411765, green: 0.7843137255, blue: 0.9803921569, alpha: 1), #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)], startPoint: CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint(x: 0.5, y: 1.0))
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -42,6 +43,12 @@ extension RecordsScreenViewController: UITableViewDataSource, UITableViewDelegat
                 cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.width/2
             }
             return cell
+        } else {
+            cell.contentView.viewWithTag(2)?.layer.shadowOpacity = 0.4
+            cell.contentView.viewWithTag(2)?.layer.shadowRadius = 3
+            cell.contentView.viewWithTag(2)?.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            cell.contentView.viewWithTag(2)?.layer.shadowOffset = CGSize(width: 0, height: 3)
+            cell.contentView.viewWithTag(2)?.layer.masksToBounds = false
         }
         return cell
     }
