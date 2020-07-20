@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AgA-p6-DVO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View-->
+        <scene sceneID="X1f-9B-6Wu">
+            <objects>
+                <viewController storyboardIdentifier="loginSB" id="AgA-p6-DVO" customClass="LoginView" customModule="ArduinoClockIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hW2-Xy-WnC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AcademyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="a55-2v-rFh">
+                                <rect key="frame" x="41.5" y="144" width="331" height="176.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a55-2v-rFh" secondAttribute="height" multiplier="15:8" id="Ywb-5q-Llk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a55-2v-rFh" firstAttribute="centerX" secondItem="hW2-Xy-WnC" secondAttribute="centerX" id="LCO-1S-ejf"/>
+                            <constraint firstItem="a55-2v-rFh" firstAttribute="width" secondItem="hW2-Xy-WnC" secondAttribute="width" multiplier="0.8" id="QkC-t0-b7i"/>
+                            <constraint firstItem="a55-2v-rFh" firstAttribute="top" secondItem="ENK-lc-RWz" secondAttribute="top" constant="100" id="vVD-W1-ZYd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ENK-lc-RWz"/>
+                    </view>
+                    <connections>
+                        <segue destination="Z4d-Yp-gYc" kind="presentation" identifier="goToFirstScreen" modalPresentationStyle="fullScreen" id="AL3-Rb-U0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xu-G7-1e8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="143"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="KTT-Id-MlS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Z4d-Yp-gYc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHc-mN-rJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AcademyLogo" width="133" height="157"/>
+    </resources>
+</document>
